@@ -1,0 +1,124 @@
+.dancing-cat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.cat-wrapper {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.cat-image {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+/* Dancing Animation */
+.cat-wrapper.dancing {
+  animation: dance 2s infinite ease-in-out;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  10% {
+    transform: translateY(-20px) rotate(-5deg) scale(1.05);
+  }
+  20% {
+    transform: translateY(0) rotate(5deg) scale(1);
+  }
+  30% {
+    transform: translateY(-30px) rotate(-8deg) scale(1.1);
+  }
+  40% {
+    transform: translateY(0) rotate(8deg) scale(1);
+  }
+  50% {
+    transform: translateY(-25px) rotate(0deg) scale(1.08);
+  }
+  60% {
+    transform: translateY(0) rotate(-10deg) scale(1);
+  }
+  70% {
+    transform: translateY(-20px) rotate(10deg) scale(1.05);
+  }
+  80% {
+    transform: translateY(0) rotate(-5deg) scale(1);
+  }
+  90% {
+    transform: translateY(-15px) rotate(5deg) scale(1.03);
+  }
+}
+
+.dance-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 3px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dance-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.dance-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cat-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .dance-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .app h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cat-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  .dance-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .app h1 {
+    font-size: 1.5rem;
+  }
+
+  .dancing-cat-container {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+}

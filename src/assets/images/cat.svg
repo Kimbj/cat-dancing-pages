@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Cat Body -->
+  <ellipse cx="100" cy="120" rx="45" ry="55" fill="#ff9a56"/>
+
+  <!-- Cat Head -->
+  <circle cx="100" cy="70" r="35" fill="#ff9a56"/>
+
+  <!-- Left Ear -->
+  <path d="M 75 50 L 65 25 L 85 45 Z" fill="#ff9a56"/>
+  <path d="M 75 48 L 70 32 L 82 45 Z" fill="#ffb380"/>
+
+  <!-- Right Ear -->
+  <path d="M 125 50 L 135 25 L 115 45 Z" fill="#ff9a56"/>
+  <path d="M 125 48 L 130 32 L 118 45 Z" fill="#ffb380"/>
+
+  <!-- Left Eye -->
+  <ellipse cx="88" cy="68" rx="6" ry="9" fill="#2c3e50"/>
+  <ellipse cx="89" cy="66" rx="2" ry="3" fill="white"/>
+
+  <!-- Right Eye -->
+  <ellipse cx="112" cy="68" rx="6" ry="9" fill="#2c3e50"/>
+  <ellipse cx="113" cy="66" rx="2" ry="3" fill="white"/>
+
+  <!-- Nose -->
+  <path d="M 100 78 L 97 82 L 103 82 Z" fill="#d67d46"/>
+
+  <!-- Mouth -->
+  <path d="M 100 82 Q 95 88 90 85" stroke="#2c3e50" stroke-width="2" fill="none"/>
+  <path d="M 100 82 Q 105 88 110 85" stroke="#2c3e50" stroke-width="2" fill="none"/>
+
+  <!-- Whiskers Left -->
+  <line x1="70" y1="72" x2="50" y2="70" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="70" y1="78" x2="50" y2="80" stroke="#2c3e50" stroke-width="1.5"/>
+
+  <!-- Whiskers Right -->
+  <line x1="130" y1="72" x2="150" y2="70" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="130" y1="78" x2="150" y2="80" stroke="#2c3e50" stroke-width="1.5"/>
+
+  <!-- Left Arm -->
+  <ellipse cx="70" cy="125" rx="12" ry="30" fill="#ff9a56"/>
+
+  <!-- Right Arm -->
+  <ellipse cx="130" cy="125" rx="12" ry="30" fill="#ff9a56"/>
+
+  <!-- Left Leg -->
+  <ellipse cx="85" cy="165" rx="10" ry="20" fill="#ff9a56"/>
+
+  <!-- Right Leg -->
+  <ellipse cx="115" cy="165" rx="10" ry="20" fill="#ff9a56"/>
+
+  <!-- Tail -->
+  <path d="M 140 130 Q 165 120 170 140 Q 175 160 160 165"
+        stroke="#ff9a56" stroke-width="15" fill="none"
+        stroke-linecap="round"/>
+
+  <!-- Belly -->
+  <ellipse cx="100" cy="125" rx="25" ry="35" fill="#ffd4b3"/>
+</svg>
